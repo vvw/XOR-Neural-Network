@@ -4,7 +4,7 @@
 
 Basic MLP machine learning algorithm with back propagation written in C++.
 
-Based on the <a href="https://vimeo.com/19569529">video tutorial</a> by David Miller.
+Based on the <a href="https://vimeo.com/19569529" target="_blank">video tutorial</a> by David Miller.
 
 #
 
