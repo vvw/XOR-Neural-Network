@@ -343,7 +343,7 @@ Net::Net(const vector<unsigned> &topology)
 
 int main()
 {
-    TrainingData trainData("C:\\Users\\User\\Documents\\NetBeansProjects\\MATH230\\trainingDataGenerator\\trainingData.txt");
+    TrainingData trainData("trainingData.txt");
 
     // e.g., { 3, 2, 1 }
     vector<unsigned> topology;
