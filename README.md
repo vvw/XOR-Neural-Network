@@ -1,7 +1,5 @@
 # XOR-Neural-Network
 
-#
-
 Basic MLP machine learning algorithm with back propagation written in C++.
 
 Based on the <a href="https://vimeo.com/19569529" target="_blank">video tutorial</a> by David Miller.
@@ -9,8 +7,6 @@ Based on the <a href="https://vimeo.com/19569529" target="_blank">video tutorial
 #
 
 # How to Operate
-
-#
 
 1. Compile the <a href="https://github.com/Isaacdelly/XOR-Neural-Network/blob/master/trainingDataGenerator.cpp">trainingDataGenerator.cpp</a>. This program will create a text file `trainingData.txt` that includes a list of 10,000 XOR scenarios along with a corresponding answer that the computer will attempt to calculate. The generator could be modified to include different amounts of data if desired.
 
