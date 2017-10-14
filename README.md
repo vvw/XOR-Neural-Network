@@ -20,6 +20,6 @@ Based on the <a href="https://vimeo.com/19569529">video tutorial</a> by David Mi
 
 # Evaluations
 
-Using the predetermined settings of a 2-4-1 layer scheme, the machine will accurately calculate a XOR scenario within 99.98% accuracy by the end of 10,000 calculations.
+Using the predetermined settings of a 2-4-1 layer scheme with 0.15 learning rate, the machine will accurately calculate a XOR scenario within 99.98% accuracy by the end of 10,000 calculations.
 
 #
