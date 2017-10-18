@@ -14,7 +14,8 @@ using namespace std;
 class TrainingData {
 public:
     TrainingData(const string filename);
-    bool isEof(void) { return m_trainingDataFile.eof(); }
+    bool isEof(void) { 
+        return m_trainingDataFile.eof(); }
     void getTopology(vector<unsigned> &topology);
     unsigned getNextInputs(vector<double> &inputVals);
     unsigned getTargetOutputs(vector<double> &targetOutputVals);
@@ -51,7 +52,8 @@ unsigned TrainingData::getNextInputs(vector<double> &inputVals) {
         while (ss >> oneValue) {
             inputVals.push_back(oneValue); }
     }
-    return inputVals.size(); }
+    return inputVals.size(); 
+}
 
 unsigned TrainingData::getTargetOutputs(vector<double> &targetOutputVals) {
     targetOutputVals.clear();
@@ -78,8 +80,10 @@ typedef vector<Neuron> Layer;
 class Neuron {
 public:
     Neuron(unsigned numOutputs, unsigned myIndex);
-    void setOutputVal(double val) { m_outputVal = val; }
-    double getOutputVal(void) const { return m_outputVal; }
+    void setOutputVal(double val) { 
+        m_outputVal = val; }
+    double getOutputVal(void) const { 
+        return m_outputVal; }
     void feedForward(const Layer &prevLayer);
     void calcOutputGradients(double targetVal);
     void calcHiddenGradients(const Layer &nextLayer);
@@ -90,7 +94,8 @@ private:
     static double alpha;
     static double transferFunction(double x);
     static double transferFunctionDerivative(double x);
-    static double randomWeight(void) { return rand() / double(RAND_MAX); }
+    static double randomWeight(void) { 
+        return rand() / double(RAND_MAX); }
     double sumDOW(const Layer &nextLayer) const;
     double m_outputVal;
     vector<Connection> m_outputWeights;
